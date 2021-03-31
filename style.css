@@ -1,0 +1,110 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container-body{
+    display: grid;
+    grid-template-rows: 80px 1fr 20px;
+    grid-template-columns: 1fr 300px ;
+    height: 150vh;
+
+    grid-template-areas: "header header"
+                        "main left"
+                         "footer footer";
+}
+.header{grid-area: header;}
+.left{grid-area: left;}
+.main{grid-area: main;}
+.footer{grid-area: footer;}
+
+.header{
+    /* background: orange; */
+    background: rgb(221, 46, 46);
+    color: black;
+}
+.left{
+    /* background: linear-gradient(to bottom, orange 70%,rgb(238, 234, 18)100%); */
+    /* background: linear-gradient(to bottom, rgb(221, 46, 46) 70%,#efb810 100%); */
+    background: linear-gradient(to bottom, rgb(255, 247, 247) 70%,#fff 100%);
+}
+.footer{
+    background: fff;
+}
+
+.header{
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    font-size: 20px;
+    color: #fff;
+}
+.header .logo{
+    display: flex; justify-content: center; align-items: center;
+    font-weight: 800;
+    font-size: 25px;
+}
+.header .nav{
+    display: flex; justify-content: flex-end; align-items: center;
+    margin-right: 30px;
+}
+.header .nav ul{
+   list-style: none;
+   display: flex;
+   flex-direction: row;
+}
+.header .nav ul li{
+    padding: 2px 8px;
+    font-size: 18px;
+}
+.header .nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.header .nav ul li a:hover{
+    border-bottom: solid 1px
+}
+.main{
+    display: grid;
+    grid-auto-rows: 350px;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    justify-items: center;
+    align-items: center;
+}
+.main picture{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    font-size: 13px;
+}
+.main picture p{
+    padding: 0 15px;
+}
+.main picture a{
+    color: white;
+    padding: 4px 14px;
+    margin-top: 30px;
+    font-size: 16px;
+    text-decoration: none;
+    /* background-color: rgb(221, 46, 46); */
+    background-color: rgb(0, 183, 255);
+    border-radius: 18px;
+}
+.main picture a:hover{
+    background-color: rgb(221, 46, 46);
+}
+.left iframe{
+    border: none;
+    background-color: rgb(221, 46, 46);
+}
+.footer{
+    text-align: center;
+    font-size: 15px;
+}
+.footer a{
+    text-decoration: none;
+
+}
