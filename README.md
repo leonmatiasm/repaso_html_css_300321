@@ -4,4 +4,4 @@ de comida.</p>
 
 <img src="https://user-images.githubusercontent.com/43658425/113088422-c7568e00-91a2-11eb-8d12-68426361b483.png"></img>
 
-<h3>Soy Marco Antonio y sigo aprendiendo👍</h3>
+<h3>Sigo aprendiendo👍</h3>
